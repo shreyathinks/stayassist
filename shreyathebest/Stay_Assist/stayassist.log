@@ -1,0 +1,75 @@
+[2025-03-25 10:23:14,226] INFO in __init__: Database tables created
+[2025-03-25 10:23:14,269] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+[2025-03-25 10:23:14,269] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-03-25 10:23:14,272] INFO in _internal:  * Restarting with stat
+[2025-03-25 10:23:15,481] INFO in __init__: Database tables created
+[2025-03-25 10:23:15,495] WARNING in _internal:  * Debugger is active!
+[2025-03-25 10:23:15,501] INFO in _internal:  * Debugger PIN: 592-779-250
+[2025-03-25 10:23:21,837] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:23:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2025-03-25 10:23:21,962] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:23:21] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-03-25 10:23:21,980] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:23:21] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-03-25 10:23:22,079] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:23:22] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:23:22,105] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:23:22] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:26:20,188] INFO in _internal:  * Detected change in 'c:\\Users\\VK Gupta\\Desktop\\stayassist\\Stay_Assist\\website\\auth.py', reloading
+[2025-03-25 10:26:20,353] INFO in _internal:  * Restarting with stat
+[2025-03-25 10:26:21,506] INFO in __init__: Database tables created
+[2025-03-25 10:26:21,520] WARNING in _internal:  * Debugger is active!
+[2025-03-25 10:26:21,527] INFO in _internal:  * Debugger PIN: 592-779-250
+[2025-03-25 10:26:23,583] INFO in _internal:  * Detected change in 'c:\\Users\\VK Gupta\\Desktop\\stayassist\\Stay_Assist\\website\\auth.py', reloading
+[2025-03-25 10:26:23,753] INFO in _internal:  * Restarting with stat
+[2025-03-25 10:26:25,018] INFO in __init__: Database tables created
+[2025-03-25 10:26:25,037] WARNING in _internal:  * Debugger is active!
+[2025-03-25 10:26:25,052] INFO in _internal:  * Debugger PIN: 592-779-250
+[2025-03-25 10:27:56,310] INFO in _internal:  * Detected change in 'c:\\Users\\VK Gupta\\Desktop\\stayassist\\Stay_Assist\\website\\auth.py', reloading
+[2025-03-25 10:27:56,450] INFO in _internal:  * Restarting with stat
+[2025-03-25 10:27:57,670] INFO in __init__: Database tables created
+[2025-03-25 10:27:57,679] WARNING in _internal:  * Debugger is active!
+[2025-03-25 10:27:57,683] INFO in _internal:  * Debugger PIN: 592-779-250
+[2025-03-25 10:28:05,912] INFO in __init__: Database tables created
+[2025-03-25 10:28:05,951] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:9000
+[2025-03-25 10:28:05,951] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-03-25 10:28:05,954] INFO in _internal:  * Restarting with stat
+[2025-03-25 10:28:07,378] INFO in __init__: Database tables created
+[2025-03-25 10:28:07,392] WARNING in _internal:  * Debugger is active!
+[2025-03-25 10:28:07,398] INFO in _internal:  * Debugger PIN: 592-779-250
+[2025-03-25 10:28:11,736] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:11] "GET / HTTP/1.1" 200 -
+[2025-03-25 10:28:12,028] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/pest-control-concept-illustratio.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,054] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/insta_icon.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,083] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/js/landing.js HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,084] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/css/landing.css HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,086] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/Logo.svg HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,087] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/fb_icon.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,092] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/household-renovation-professions.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,096] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/electrician-concept-illustration2.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,100] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/linkedin_icon.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,149] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/tele_icon.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:12,150] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:12] "[36mGET /static/images/bg-2.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:14,684] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:14] "GET /auth/signup HTTP/1.1" 200 -
+[2025-03-25 10:28:14,721] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:14] "[36mGET /static/css/sign_up.css HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:14,723] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:14] "[36mGET /static/js/sign_up.js HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:14,734] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:14] "[36mGET /static/images/Logo.svg HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:14,745] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:14] "[33mGET /static/images/zoshua-colah-TzMGehZmocI-unsplash.png HTTP/1.1[0m" 404 -
+[2025-03-25 10:28:14,774] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:14] "[36mGET /static/images/bg-2.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:28,125] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:28] "GET /auth/signin HTTP/1.1" 200 -
+[2025-03-25 10:28:28,158] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:28] "[36mGET /static/css/sign_in.css HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:28,191] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:28] "[36mGET /static/images/Logo.svg HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:28,196] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:28] "[36mGET /static/js/sign_up.js HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:28,256] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:28] "[36mGET /static/images/bg-2.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:33,725] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:33] "[35m[1mPOST /auth/signin HTTP/1.1[0m" 500 -
+[2025-03-25 10:28:33,766] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:33] "[36mGET /auth/signin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:33,779] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:33] "[36mGET /auth/signin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:33,810] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:33] "[36mGET /auth/signin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-03-25 10:28:33,921] INFO in _internal: 127.0.0.1 - - [25/Mar/2025 10:28:33] "[36mGET /auth/signin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[2025-03-25 11:09:28,408] INFO in _internal:  * Detected change in 'c:\\Users\\VK Gupta\\Desktop\\stayassist\\Stay_Assist\\website\\__init__.py', reloading
+[2025-03-25 11:09:28,592] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:09:48,024] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:09:57,305] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:00,570] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:02,690] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:04,929] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:10,060] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:16,184] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:21,444] INFO in _internal:  * Restarting with stat
+[2025-03-25 11:10:27,698] INFO in _internal:  * Restarting with stat

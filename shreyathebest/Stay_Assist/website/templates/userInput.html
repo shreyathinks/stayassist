@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Service</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/userInput.css') }}">
+</head>
+<body>
+    <script src="{{ url_for('static', filename='js/userInput.js') }}"></script>
+    <div class="container">
+        <h2>One Step Away from Assistance</h2>
+        <form action="{{ url_for('auth.userInput') }}" method="POST" id="service-form" enctype="multipart/form-data">
+            
+            <!-- Prefilled User Info -->
+            <input type="text" name="first_name" value="{{ user.first_name }}" readonly required>
+            <input type="text" name="last_name" value="{{ user.last_name }}" readonly required>
+            <input type="email" name="email" value="{{ user.email }}" readonly required>
+            <input type="text" name="phone_number" value="{{ user.phone_number }}" readonly required>
+            <input type="text" name="hostel" value="{{ user.hostel }}" readonly required>
+            <input type="text" name="block" value="{{ user.block }}" readonly required>
+            <input type="text" name="room_number" value="{{ user.room_number }}" readonly required>
+
+            <!-- Service Selection -->
+            <label for="service_type">Select Service:</label>
+            <select name="service_type" id="service_type" onchange="toggleImageUpload()" required>
+                <option value="" disabled selected>Choose a service</option>
+                <option value="Electrical Repair">Electrical Repair</option>
+                <option value="AC Servicing">AC Servicing</option>
+                <option value="Furniture Repair">Furniture Repair</option>
+                <option value="Room Cleaning">Room Cleaning</option>
+                <option value="Pest Control">Pest Control</option>
+            </select>
+
+            <!-- Conditional Problem Description -->
+            <label for="problem_desc">Describe the issue (if applicable):</label>
+            <textarea name="problem_desc" id="problem_desc" rows="3" placeholder="Briefly describe the issue (e.g., 'Almirah handle broken')"></textarea>
+
+            <!-- Image Upload (Hidden by Default) -->
+            <div id="image-upload" style="display: none;">
+                <label for="issue_image">Upload an Image (if applicable):</label>
+                <input type="file" name="issue_image" id="issue_image" accept="image/*">
+            </div>
+
+            <!-- Time Slot Selection -->
+            <label for="time_slot">Preferred Time Slot:</label>
+            <input type="datetime-local" name="time_slot" required>
+
+            <button type="submit">Request Service</button>
+        </form>
+    </div>
+</body>
+</html>

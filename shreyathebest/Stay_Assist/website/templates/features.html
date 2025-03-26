@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/features.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="Stay Assist Logo" />
+                Stay Assist
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Feedback</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="services">
+            <div class="service-row">
+                <!-- Cleaning Service -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='images/vaccumCleaner.jpg') }}" alt="Cleaning" />
+                        <span class="tooltip">Book Cleaning</span>
+                        <div class="service-form">
+                            <h3>Book Cleaning Service</h3>
+                            <form class="service-request-form" data-service="cleaning" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="cleaning-issue">Describe the issue:</label>
+                                    <textarea id="cleaning-issue" name="issue" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cleaning-date">Date & Time:</label>
+                                    <input type="datetime-local" id="cleaning-date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cleaning-frequency">Frequency:</label>
+                                    <select id="cleaning-frequency" name="frequency">
+                                        <option value="once">One-time</option>
+                                        <option value="weekly">Weekly</option>
+                                        <option value="biweekly">Bi-weekly</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cleaning-image">Upload Image (optional):</label>
+                                    <input type="file" id="cleaning-image" name="image" accept="image/*">
+                                </div>
+                                <button type="submit" class="btn-submit">Submit Request</button>
+                            </form>
+                            <div class="requests-container" id="cleaning-requests"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pest Control Service -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='images/pest.jpg') }}" alt="Pest Control" />
+                        <span class="tooltip">Book Pest Control</span>
+                        <div class="service-form">
+                            <h3>Book Pest Control Service</h3>
+                            <form class="service-request-form" data-service="pest" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="pest-issue">Describe the issue:</label>
+                                    <textarea id="pest-issue" name="issue" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pest-date">Date & Time:</label>
+                                    <input type="datetime-local" id="pest-date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pest-type">Pest Type:</label>
+                                    <select id="pest-type" name="pest_type">
+                                        <option value="cockroach">Cockroaches</option>
+                                        <option value="ants">Ants</option>
+                                        <option value="bedbugs">Bed Bugs</option>
+                                        <option value="rats">Rats/Mice</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="pest-image">Upload Image (optional):</label>
+                                    <input type="file" id="pest-image" name="image" accept="image/*">
+                                </div>
+                                <button type="submit" class="btn-submit">Submit Request</button>
+                            </form>
+                            <div class="requests-container" id="pest-requests"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-row">
+                <!-- AC Servicing -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='images/ac.jpg') }}" alt="AC Servicing" />
+                        <span class="tooltip">Book AC Service</span>
+                        <div class="service-form">
+                            <h3>Book AC Servicing</h3>
+                            <form class="service-request-form" data-service="ac" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="ac-issue">Describe the issue:</label>
+                                    <textarea id="ac-issue" name="issue" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ac-date">Date & Time:</label>
+                                    <input type="datetime-local" id="ac-date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ac-type">Service Type:</label>
+                                    <select id="ac-type" name="service_type">
+                                        <option value="general">General Maintenance</option>
+                                        <option value="repair">Repair</option>
+                                        <option value="cleaning">Deep Cleaning</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ac-image">Upload Image (optional):</label>
+                                    <input type="file" id="ac-image" name="image" accept="image/*">
+                                </div>
+                                <button type="submit" class="btn-submit">Submit Request</button>
+                            </form>
+                            <div class="requests-container" id="ac-requests"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Furniture Repair -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="{{ url_for('static', filename='images/Furniture.jpg') }}" alt="Furniture Repair" />
+                        <span class="tooltip">Book Furniture Repair</span>
+                        <div class="service-form">
+                            <h3>Book Furniture Repair</h3>
+                            <form class="service-request-form" data-service="furniture" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="furniture-issue">Describe the issue:</label>
+                                    <textarea id="furniture-issue" name="issue" required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="furniture-date">Date & Time:</label>
+                                    <input type="datetime-local" id="furniture-date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="furniture-type">Furniture Type:</label>
+                                    <select id="furniture-type" name="furniture_type">
+                                        <option value="chair">Chair</option>
+                                        <option value="table">Table</option>
+                                        <option value="bed">Bed</option>
+                                        <option value="wardrobe">Wardrobe</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="furniture-image">Upload Image (optional):</label>
+                                    <input type="file" id="furniture-image" name="image" accept="image/*">
+                                </div>
+                                <button type="submit" class="btn-submit">Submit Request</button>
+                            </form>
+                            <div class="requests-container" id="furniture-requests"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Premium Room Services at Your Doorstep</p>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Request Submitted Successfully!</h3>
+            <p>Your service request has been received. We'll contact you soon.</p>
+            <button id="modal-ok" class="btn-ok">OK</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize datetime inputs with default values (now + 1 hour)
+            const now = new Date();
+            now.setHours(now.getHours() + 1);
+            const defaultDateTime = now.toISOString().slice(0, 16);
+            document.querySelectorAll('input[type="datetime-local"]').forEach(input => {
+                input.value = defaultDateTime;
+            });
+
+            // Handle form submissions
+            document.querySelectorAll('.service-request-form').forEach(form => {
+                form.addEventListener('submit', async function (e) {
+                    e.preventDefault();
+                    
+                    const submitButton = this.querySelector('.btn-submit');
+                    const originalButtonText = submitButton.textContent;
+                    submitButton.disabled = true;
+                    submitButton.textContent = 'Submitting...';
+
+                    try {
+                        const serviceType = this.dataset.service;
+                        const formData = new FormData(this);
+
+                        // Validate required fields
+                        const issue = formData.get('issue');
+                        const date = formData.get('date');
+                        if (!issue || !date) {
+                            throw new Error('Please fill in all required fields');
+                        }
+
+                        // Create the request data
+                        const requestData = {
+                            service: serviceType, 
+                            issue: issue,
+                            date: date
+                        };
+
+                        // Add service-specific fields
+                        if (serviceType === 'cleaning') {
+                            requestData.frequency = formData.get('frequency');
+                        } else if (serviceType === 'pest') {
+                            requestData.pest_type = formData.get('pest_type');
+                        } else if (serviceType === 'ac') {
+                            requestData.service_type = formData.get('service_type');
+                        } else if (serviceType === 'furniture') {
+                            requestData.furniture_type = formData.get('furniture_type');
+                        }
+
+                        // Submit via AJAX
+                        const response = await fetch('/book-service', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(requestData)
+                        });
+
+                        if (!response.ok) {
+                            const errorData = await response.json();
+                            throw new Error(errorData.error || 'Request failed');
+                        }
+
+                        const data = await response.json();
+
+                        if (data.success) {
+                            showSuccessModal();
+                            this.reset();
+                            this.querySelector('input[type="datetime-local"]').value = defaultDateTime;
+                            await loadServiceRequests(serviceType);
+                        } else {
+                            throw new Error(data.message || "Request failed");
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert(`Error: ${error.message}`);
+                    } finally {
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalButtonText;
+                    }
+                });
+            });
+
+            // Load existing requests for all services
+            loadAllServiceRequests();
+
+            // Modal control functions
+            function showSuccessModal() {
+                const modal = document.getElementById('success-modal');
+                modal.style.display = 'block';
+                
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 3000);
+            }
+
+            document.querySelector('.close-modal').addEventListener('click', function () {
+                document.getElementById('success-modal').style.display = 'none';
+            });
+
+            document.getElementById('modal-ok').addEventListener('click', function () {
+                document.getElementById('success-modal').style.display = 'none';
+            });
+        });
+
+        async function loadAllServiceRequests() {
+            try {
+                await Promise.all([
+                    loadServiceRequests('cleaning'),
+                    loadServiceRequests('pest'),
+                    loadServiceRequests('ac'),
+                    loadServiceRequests('furniture')
+                ]);
+            } catch (error) {
+                console.error("Error loading service requests:", error);
+            }
+        }
+
+        async function loadServiceRequests(serviceType) {
+            try {
+                const response = await fetch(`/auth/service-requests?service=${serviceType}`);
+                
+                if (!response.ok) {
+                    throw new Error('Failed to fetch requests');
+                }
+
+                const requests = await response.json();
+                const container = document.getElementById(`${serviceType}-requests`);
+                
+                if (!container) return;
+
+                container.innerHTML = '';
+
+                if (!requests || requests.length === 0) {
+                    container.innerHTML = '<p class="no-requests">No requests yet</p>';
+                    return;
+                }
+
+                requests.forEach(request => {
+                    const requestElement = document.createElement('div');
+                    requestElement.className = 'request-item';
+
+                    let details = '';
+                    if (serviceType === 'cleaning' && request.frequency) {
+                        details = `Frequency: ${request.frequency}`;
+                    } else if (serviceType === 'pest' && request.pest_type) {
+                        details = `Pest Type: ${request.pest_type}`;
+                    } else if (serviceType === 'ac' && request.service_type) {
+                        details = `Service Type: ${request.service_type}`;
+                    } else if (serviceType === 'furniture' && request.furniture_type) {
+                        details = `Furniture: ${request.furniture_type}`;
+                    }
+
+                    requestElement.innerHTML = `
+                        <p><strong>${request.issue || 'No description'}</strong></p>
+                        <p>Scheduled: ${request.date ? new Date(request.date).toLocaleString() : 'Not scheduled'}</p>
+                        ${details ? `<p>${details}</p>` : ''}
+                        <p>Status: ${request.status || 'Pending'}</p>
+                        <hr>
+                    `;
+                    container.appendChild(requestElement);
+                });
+            } catch (error) {
+                console.error(`Error loading ${serviceType} requests:`, error);
+                const container = document.getElementById(`${serviceType}-requests`);
+                if (container) {
+                    container.innerHTML = '<p class="error-message">Failed to load requests</p>';
+                }
+            }
+        }
+        document.querySelectorAll('.service-request-form').forEach(form => {
+    form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const submitButton = this.querySelector('.btn-submit');
+        const originalText = submitButton.textContent;
+        submitButton.disabled = true;
+        submitButton.textContent = 'Submitting...';
+
+        try {
+            const serviceType = this.dataset.service;
+            const formData = new FormData(this);
+
+            // Validate required fields
+            if (!formData.get('issue') || !formData.get('date')) {
+                throw new Error('Please fill in all required fields');
+            }
+
+            // Prepare request data
+            const requestData = {
+                service: serviceType,
+                issue: formData.get('issue'),
+                date: formData.get('date')
+            };
+
+            // Add service-specific fields
+            if (serviceType === 'cleaning') {
+                requestData.frequency = formData.get('frequency');
+            } else if (serviceType === 'pest') {
+                requestData.pest_type = formData.get('pest_type');
+            } else if (serviceType === 'ac') {
+                requestData.service_type = formData.get('service_type');
+            } else if (serviceType === 'furniture') {
+                requestData.furniture_type = formData.get('furniture_type');
+            }
+
+            // Submit the request
+            const response = await fetch('/book-service', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(requestData)
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.error || 'Request failed');
+            }
+
+            // Redirect to confirmation page
+            window.location.href = data.redirect_url;
+
+        } catch (error) {
+            console.error('Error:', error);
+            alert(`Error: ${error.message}`);
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = originalText;
+        }
+    });
+});
+    </script>
+</body>
+</html>

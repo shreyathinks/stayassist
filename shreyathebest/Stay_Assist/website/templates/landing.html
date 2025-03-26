@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Assist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+  </head>
+  <body>
+    <div class="page-container">
+      <!-- First section (your original hero section) -->
+      <div class="hero-container">
+        <div class="overlay"></div>
+
+        <!-- Navigation -->
+        <nav class="navbar">
+          <div class="logo">
+            <img src="{{ url_for('static', filename='images/Logo.svg') }}" alt="Stay Assist Logo" />
+            Stay Assist
+          </div>
+          <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Feedback</a>
+          </div>
+          <div class="auth-buttons">
+            <a href="{{ url_for('auth.sign_in') }}" class="btn btn-outline">Sign In</a>
+            <a href="{{ url_for('auth.sign_up') }}" class="btn btn-filled">Get Started</a>
+
+        </div>
+        
+        
+          
+        </nav>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+          <h1>Get hassle free room service at anytime</h1>
+          <p>
+            A web platform designed to help college students easily request
+            essential services such as cleaning, repair etc. Our platform
+            provides you seamless experience, from requesting services to
+            tracking their status.
+          </p>
+        </div>
+
+        <!-- Service Categories -->
+        <div class="service-categories">
+          <div class="service-category" onclick="showServiceDetails('repairs')">
+            Repairs
+            <div class="hover-info">Know more</div>
+          </div>
+          <div
+            class="service-category"
+            onclick="showServiceDetails('cleaning')"
+          >
+            Cleaning
+            <div class="hover-info">Know more</div>
+          </div>
+          <div class="service-category" onclick="showServiceDetails('laundry')">
+            Laundary
+            <div class="hover-info">Know more</div>
+          </div>
+          <div class="service-category" onclick="showServiceDetails('pest')">
+            Pest Control
+            <div class="hover-info">Know more</div>
+          </div>
+        </div>
+      </div>
+
+      <section class="features-section">
+        <div class="glass-overlay"></div>
+
+        <div class="content-container">
+          <h2 class="tagline">
+            One Tap, No Stress, StayAssist for Hassle-less!
+          </h2>
+
+          <h1 class="main-heading">Way smoother..</h1>
+
+          <p class="services-text">
+            Trusted by 1000+ students in 20+ colleges all over the country.
+          </p>
+
+          <h3 class="highlight-text">No need to get up from bed on Sundays!</h3>
+
+          <p class="supporting-text">
+            We'll help you through the hardest part of your weekend cleaning.
+          </p>
+          <a href="{{ url_for('auth.sign_up') }}" class="cta-button">Create an Account</a>
+        </div>
+      </section>
+      <section class="features-section2">
+        <!-- First Feature Row -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <h2 class="feature-title">
+              Fast repairs with Quality products
+            </h2>
+            <p class="feature-description">
+              Flickering lights 💡? Broken furniture🛋️? No worries! Get your electrical and furniture repairs done quickly with just a few clicks. Because hostel life should be hassle-free, not full of broken switches and wobbly chairs!
+            </p>
+            <a href="#" class="cta-button">Book a repair</a>
+          </div>
+          <div class="feature-image">
+            <div class="illustration-container">
+              <img
+                src="{{ url_for('static', filename='images/electrician-concept-illustration2.png') }}"
+                alt="Repair man"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Feature Row -->
+        <div class="feature-row">
+          <div class="feature-text">
+            <h2 class="feature-title">Room cleaning </h2>
+            <p class="feature-description">
+              Messy room ? Dusty corners🕸️? We’ve got you covered🧹! Choose between deep cleaning for a fresh start or regular cleaning to keep your space neat. A clean room = a fresh mind.
+            </p>
+            <a href="#" class="cta-button">Click to clean</a>
+          </div>
+          <div class="feature-image">
+            <div class="illustration-container">
+              <img
+                src="{{ url_for('static', filename='images/household-renovation-professions.png') }}"
+                alt="Room cleaning"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="resume-templates-section">
+        <div class="container">
+          <div class="templates-row">
+            <div class="templates-content">
+              <h2 class="templates-title">Effective Pest removal</h2>
+              <p class="templates-description">
+                Unwanted roommates 🐜? And no, we don’t mean your friends! Get rid of pests with our reliable pest control service. Because your room should be yours - not a home for insects!
+              </p>
+              
+              <a href="{{ url_for('auth.sign_up') }}" class="templates-cta">Create an Account</a>
+
+              </div>
+            <div class="templates-image">
+              <img
+                src="{{ url_for('static', filename='images/pest-control-concept-illustratio.png') }}"
+                alt="Pest control"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What's Next Section -->
+      <section class="whats-next-section">
+        <div class="container">
+          <h2 class="whats-next-title">What's next</h2>
+          <p class="whats-next-description">
+            Say goodbye to service hassles! Request, track, and get things done effortlessly—all in one place. Get Started Now.
+          </p>
+          <a href="#" class="try-free-btn">Get started</a>
+
+          <!-- Footer Grid -->
+          <div class="footer">
+            <div class="footer-grid">
+              <div class="footer-column">
+                <h3 class="footer-heading">Platform</h3>
+                <ul class="footer-links">
+                  <li>
+                    <a href="#" style="cursor: default; color: #777"
+                      >Plans and Prices</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://vtop.vit.ac.in/vtop/open/page" style="cursor: default; color: #777"
+                      >VTOP</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" style="cursor: default; color: #777"
+                      >Youtube</a
+                    >
+                
+                  </li>
+                  <li>
+                    <a href="#" style="cursor: default; color: #777">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3 class="footer-heading">Features</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Repairs</a></li>
+                  <li><a href="#">Pest control</a></li>
+                  <li><a href="#">Laundary</a></li>
+                  <li><a href="#">Cleaning</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3 class="footer-heading">Resources</h3>
+                <ul class="footer-links">
+                  <li>
+                    <a href="#" style="cursor: default; color: #777"
+                      >Benefits of Cleaning.</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" style="cursor: default; color: #777"
+                      >How to keep your room clean?</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" style="cursor: default; color: #777"
+                      >Why you should use Stay-Assist?</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" style="cursor: default; color: #777"
+                      >What are our Prices?</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-column">
+                <h3 class="footer-heading">Support</h3>
+                <p style="color: #555; margin-bottom: 20px">
+                  support@gmail.com
+                </p>
+                <div class="social-icons">
+                  <a href="#" style="cursor: default"
+                    ><img
+                      src="{{ url_for('static', filename='images/insta_icon.png') }}"
+                      alt="Instagram"
+                      class="social-icon"
+                  /></a>
+                  <a href="#" style="cursor: default"
+                    ><img
+                      src="{{ url_for('static', filename='images/fb_icon.png') }}"
+                      alt="Facebook"
+                      class="social-icon"
+                  /></a>
+                  <a href="#" style="cursor: default"
+                    ><img
+                      src="{{ url_for('static', filename='images/linkedin_icon.png') }}"
+                      alt="LinkedIn"
+                      class="social-icon"
+                  /></a>
+                  <a href="#" style="cursor: default"
+                    ><img 
+                      src="{{ url_for('static', filename='images/tele_icon.png') }}" 
+                      alt="Telegram"
+                      class="social-icon"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+              <p>
+                © Copywriting | Made with ❤️ by Trifecta |
+                <a href="#" style="cursor: default">Terms of Use</a> |
+                <a href="#" style="cursor: default">Privacy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Service Details Panel (Hidden by default) -->
+    <div class="service-details" id="serviceDetails">
+      <div class="close-details" onclick="hideServiceDetails()">×</div>
+      <h2 class="service-title" id="serviceTitle">Service Title</h2>
+      <p class="service-description" id="serviceDescription">
+        Service description goes here.
+      </p>
+    </div>
+    <script src="{{ url_for('static', filename='js/landing.js') }}"></script>
+  </body>
+</html>
